@@ -58,32 +58,42 @@ These are links to the Microsoft Update Catalog that contain the searches that t
 You will need to download all of the different monthly updates for your version of Windows 7.  In the "Products" column, be sure it says only "Windows 7", not "Windows Embedded Standard 7".  If you are using 64-bit Windows 7, which you probably are, download the one that says "for x64-based Systems".  There is one update per month (some months were skipped) from 2016-10 until now, so that is how many update files you will need to download.
 
 
+### Monthly Rollup Directory Structure
+
+The monthly rollup installation scripts make some assumptions about where to find the installers:
+
+* there is a `monthly_rollups` folder in the same directory as the script
+* the `monthly_rollups` directory contains a bunch of folders named as `[year]_[month]`, where the year is 4 digis and the month is 2 digits - each folder corresponds to a month that Microsoft released a rollup installer
+* the files in each `YYYY_MM` directory have not been renamed since they were downloaded
+
+It is up to you to take a look at the script and make sure that when you run it, it can find all of the files.  You may need to delete the execution of the scripts that pre-date October 2016 (2016_10), unless you were able to find and download them.
+
+
 ## Installation
 
 You'll need to install the Windows 7 updates in this order.  All of them are manual installations until the monthly rollups, which can be installed with the provided scripts.
 
+Close anything you have open and plan to do nothing but install these updates for the next 30 - 60 minutes.
+
 
 ### service_pack_1
 
-Run `setup.exe`.
-
-Restart your computer.
+* Navigate to the directory where you un-zipped the service pack 1 iso file, and run `setup.exe`.
+* Restart your computer.
 
 
 ### april_2015_servicing_stack
 
-For 64-bit Windows 7, run `Windows6.1-KB3020369-x64.msu`.
-For 32-bit Windows 7, run `Windows6.1-KB3020369-x86.msu`.
-
-Restart your computer.
+* For 64-bit Windows 7, run `Windows6.1-KB3020369-x64.msu`.
+* For 32-bit Windows 7, run `Windows6.1-KB3020369-x86.msu`.
+* Restart your computer.
 
 
 ### sp1_convenience_rollup
 
-For 64-bit Windows 7, run `windows6.1-kb3125574-v4-x64_2dafb1d203c8964239af3048b5dd4b1264cd93b9.msu`.
-For 32-bit Windows 7, run `windows6.1-kb3125574-v4-x86_ba1ff5537312561795cc04db0b02fbb0a74b2cbd.msu`.
-
-Restart your computer.
+* For 64-bit Windows 7, run `windows6.1-kb3125574-v4-x64_2dafb1d203c8964239af3048b5dd4b1264cd93b9.msu`.
+* For 32-bit Windows 7, run `windows6.1-kb3125574-v4-x86_ba1ff5537312561795cc04db0b02fbb0a74b2cbd.msu`.
+* Restart your computer.
 
 
 ### monthly_rollups
@@ -93,16 +103,14 @@ Open a terminal with administrative privileges:
 1. Open the start menu
 1. type `cmd`
 1. right-click on the `cmd` icon
-1. choose `Run as Administrator`
+1. choose `Run as administrator`
 
 In this `cmd` terminal, `cd` into this directory.
 
-For 64-bit Windows 7, run `install_x64.bat`.
-For 32-bit Windows 7, run `install_x86.bat`.
+* For 64-bit Windows 7, run `install_x64.bat`.
+* For 32-bit Windows 7, run `install_x86.bat`.
 
-Note that this script can take 30 minutes or more to install all of the monthly rollup updates.
-
-Restart your computer.
+Note that this script can take 30 minutes or more to install all of the monthly rollup updates.  Your computer will be automatically restarted.
 
 
 ## Script Resources
