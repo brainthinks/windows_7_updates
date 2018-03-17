@@ -1,0 +1,22 @@
+wusa /uninstall /kb:3065988 /quiet /norestart
+wusa /uninstall /kb:3083325 /quiet /norestart
+wusa /uninstall /kb:3083324 /quiet /norestart
+wusa /uninstall /kb:2976978 /quiet /norestart
+wusa /uninstall /kb:3075853 /quiet /norestart
+wusa /uninstall /kb:3065987 /quiet /norestart
+wusa /uninstall /kb:3050265 /quiet /norestart
+wusa /uninstall /kb:3050267 /quiet /norestart
+wusa /uninstall /kb:3075851 /quiet /norestart
+wusa /uninstall /kb:2902907 /quiet /norestart
+wusa /uninstall /kb:3068708 /quiet /norestart
+wusa /uninstall /kb:3022345 /quiet /norestart
+wusa /uninstall /kb:2952664 /quiet /norestart
+wusa /uninstall /kb:2990214 /quiet /norestart
+wusa /uninstall /kb:3035583 /quiet /norestart
+wusa /uninstall /kb:971033 /quiet /norestart
+wusa /uninstall /kb:3021917 /quiet /norestart
+wusa /uninstall /kb:3044374 /quiet /norestart
+wusa /uninstall /kb:3046480 /quiet /norestart
+wusa /uninstall /kb:3075249 /quiet /norestart
+wusa /uninstall /kb:3080149 /quiet /norestart
+pause

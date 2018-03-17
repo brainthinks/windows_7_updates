@@ -1,0 +1,1 @@
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate] "DisableOSUpgrade"=dword:00000001

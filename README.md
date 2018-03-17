@@ -120,3 +120,8 @@ I am by no means a Windows batch file writer, so here are the resources I looked
 * [https://msfn.org/board/topic/152020-batch-script-for-windows-software-updates-installation/](https://msfn.org/board/topic/152020-batch-script-for-windows-software-updates-installation/)
 * [https://stackoverflow.com/a/24590583](https://stackoverflow.com/a/24590583)
 * [http://www.robvanderwoude.com/goto.php](http://www.robvanderwoude.com/goto.php)
+
+
+## @TODO
+
+* Document the Windows 7 Telemetry removal scripts
